@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Font awesome icon-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+
+        <body>
+            <!-- header -->
+            <header>
+                <nav class = "navbar">
+                    <div class = "container">
+                        
+                        <a href="index.html" class = "navbar-brand">
+                            My Portfolio
+                        </a>
+                        <div class="navbar-nav">
+                            <a href = "index.html">Home</a>
+                            <a href = "myProjects.html">My Projects</a>
+                            <a href = "contact.html">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class = "banner">
+                    <div class = "container">
+                        <h1 class = "banner-title">
+                            Makayla Anderson-Tucker
+                        </h1>
+                        <p>
+                            Full Stack Software Engineer
+                        </p>
+                       
+                    </div>
+
+                </div>
+            </header>
+            <!-- end of header -->
+
+        
+ <!-- myProject -->
+ <section class="home" id = "home">
+    <div class="container">
+        <div class="title">
+            <h2>
+                Top Projects
+            </h2>
+        </div>
+
+        <div class="home-content">
+        <!-- item -->
+        <div class = "home-item" id = "home-item-1">
+            <script>
+                document.querySelector('#home-item-1')
+                .addEventListener('click', () => {
+                    window.location.href = 'myProjects.html';
+                });
+            </script>
+            <div class = "home-img">
+                <img src = "images/clockAni.gif" alt = "" width = "100" height = "250" />
+        
+                <span>
+                    Banking Application
+                </span>
+            </div>
+            <div class = "home-title">
+
+                <h2>This program is written in C++.</h2>
+                <div class="blog-text">
+                    <a href = "#">Read More</a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end of item -->
+
+         <!-- item -->
+        <div class = "home-item" id = "home-item-2">
+            <script>
+                document.querySelector('#home-item-2')
+                .addEventListener('click', () => {
+                    window.location.href = 'contact.html';
+                });
+            </script>
+            <div class = "home-img">
+                <img src = "images/chatAni.gif" alt = "" width = "100" height = "250" />
+                <span>
+                    Blog
+                </span>
+            </div>
+            <div class = "home-title">
+
+                <h2>This program is a responsive blog written in html and css</h2>
+                <div class="home-text">
+                    <a href = "#">Read More</a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end of item -->
+
+    <!-- item -->
+    <div class = "home-item" id = "home-item-3">
+        <script>
+            document.querySelector('#home-item-3')
+            .addEventListener('click', () => {
+                window.location.href = 'bokkeumbap.html';
+            });
+        </script>
+        <div class = "home-img">
+            <img src = "images/prAni.gif" alt = "" width = "100" height = "250" />
+            <span>
+                Project Manager
+            </span>
+        </div>
+        <div class = "home-title">
+
+            <h2>This a project manager written in ruby on rails.</h2>
+            <div class="home-text">
+                <a href = "#">Read More</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <!-- end of item -->
+        
+    </div>
+
+<!-- end of item -->
+          
+</section>
+<!-- end of blog-->
+
+<!-- footer-->
+<footer>
+    <div class= "social-links">
+        <a href="https://github.com/makaylacodes"><i class="fab fa-github"></i></a>
+        <a href="www.linkedin.com/in/makayla-anderson-tucker-bb680875"><i class = "fab fa-linkedin-in"></i></a>
+    </div><span>Developed by Makayla Anderson-Tucker using HTML and CSS </span>
+    
+    
+
+    
+
+    
+<!-- end of footer-->
+        </body>
+        </head>
+</html>
+
