@@ -5,7 +5,7 @@
    
     --Handlee: 'Handlee', cursive;
     --dark: #3c393d;
-    --exDark: #2b2b2b;
+    --exDark: #3a2929;
 
 }
 
@@ -133,19 +133,25 @@ header{ /* top shadow*/
 }
 /* end of banner*/
 
-/* start of work html*/
 
+/* start of work html*/
 .work{ /* work background*/
     background: linear-gradient(rgba(151, 83, 83, 0.801), rgba(138, 2, 2, 0.63));
 
     padding: 4.5rem 0;
 }
-.work-text a{/* read more button*/
+
+.work-title input:hover{ /*read more button  in work*/
+    background: var(--exDark);
+}
+.work-title input {/* read more button in work*/
     font-family: var(--Handlee);
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--dark);
-    display: inline-block;
+    display: inline;
+    margin: 10px;
+    float: left;
     background-color:#4b0303;
     color: rgb(200, 200, 241);
     font-weight: bold;
@@ -230,10 +236,10 @@ header{ /* top shadow*/
     font-weight: bold;
 }
 
-.home-text a:hover{
+.home-title input:hover{/* read more button for index.html*/
     background: var(--exDark);
 }
-.home-text a{/* read more button*/
+.home-title input{/* read more button for index.html*/
     font-family: var(--Handlee);
     font-size: 1.4rem;
     text-decoration: none;
@@ -245,10 +251,6 @@ header{ /* top shadow*/
     padding: 0.55rem 1.2rem;
     transition: all 0.5s ease;
 }
-
-.home-text a:hover{
-    background: var(--exDark);
-}
 /* end of home html*/
 
 /* start of projects */
@@ -256,6 +258,23 @@ header{ /* top shadow*/
     background: linear-gradient(rgba(145, 91, 91, 0.836), 
     rgba(87, 6, 6, 0.849));
     padding: 4.5rem 0;
+}
+.project-title input:hover{ /*read more button  in work*/
+    background: var(--exDark);
+}
+.project-title input {/* read more button in work*/
+    font-family: var(--Handlee);
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline;
+    margin: 10px;
+    float: left;
+    background-color:#7c2424;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
 }
 .project-content{
     display: grid;
@@ -298,22 +317,24 @@ header{ /* top shadow*/
 footer{
     background: var(--exDark);
     color: #fff;
-    
-    text-align: center;
+    font-size: large;
+    text-align: center; 
     padding: 2rem 0;
+    font-family: var(--Handlee);
 }
 .social-links{
     display: flex;
     justify-content: center;
     margin-bottom: 1.4rem;
+    color: black;
 }
 
 .social-links a{
     border: 2px solid #fff;
     color: #fff;
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,9 +349,10 @@ footer{
     color: var(--exDark);
 }
 
-.footer span{
+.social-links p{
     margin-top: 1rem;
     display: block;
+    font-size: 8rem;
     font-family: var(--Handlee);
     letter-spacing: 2px;
 }

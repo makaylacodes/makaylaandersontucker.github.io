@@ -6,6 +6,9 @@
     <title>Home</title>
     <meta name = "viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!-- Font awesome icon-->
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,12 +52,6 @@
             <div class="home-content">
         <!-- item -->
            <div class = "home-item" id = "home-item-1">
-                    <script>
-                        document.querySelector('#home-item-1')
-                        .addEventListener('click', () => {
-                            window.location.href = 'blog.html';
-                        });
-                    </script>
                     <div class = "home-img">
                         <img src = "images/blogAni.gif" alt = "" width = "100" height = "250" />
                         <span>
@@ -62,22 +59,15 @@
                         </span>
                     </div>
                     <div class = "home-title">
-            
                         <h2>This website is entirely written in HTML and CSS. </h2>
-                        <div class="home-text">
-                            <a href = "#">Read More</a>
-                        </div>
+                        <form action="blog.html">
+                            <input type="submit" value="Read More" />
+                        </form>
                         
                     </div>
                 </div>
                      <!-- item -->
                     <div class = "home-item" id = "home-item-2">
-                        <script>
-                            document.querySelector('#home-item-2')
-                            .addEventListener('click', () => {
-                                window.location.href = 'bank.html';
-                            });
-                        </script>
                         <div class = "home-img">
                             <img src = "images/bankiAni.gif" alt = "" width = "100" height = "250" />
                             <span>
@@ -87,9 +77,9 @@
                         <div class = "home-title">
             
                             <h2>This is a banking program written in C++.</h2>
-                            <div class="home-text">
-                                <a href = "#">Read More</a>
-                            </div>
+                            <form action="bank.html">
+                                <input type="submit" value="Read More" />
+                            </form>
                             
                         </div>
                     </div>
@@ -112,9 +102,9 @@
                     <div class = "home-title">
             
                         <h2>This is a project manager written in Ruby on Rails.</h2>
-                        <div class="home-text">
-                            <a href = "#">Read More</a>
-                        </div>
+                        <form action="pr.html">
+                            <input type="submit" value="Read More" />
+                        </form>
                         
                     </div>
                 </div>
@@ -130,10 +120,10 @@
             <!-- footer-->
         <footer>
             <div class= "social-links">
-                <a href="https://github.com/makaylacodes"><i class="fab fa-github"></i></a>
-                <a href="www.linkedin.com/in/makayla-anderson-tucker"><i class = "fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/makaylacodes"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/makayla-anderson-tucker"><i class = "fa fa-linkedin"></i></a>
             </div>
-            <span>Developed by Makayla Anderson-Tucker using HTML and CSS </span>
+            <p>Developed by Makayla Anderson-Tucker using HTML and CSS </p>
         </footer>    
             <!-- end of footer-->
                     </body>
