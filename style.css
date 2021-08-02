@@ -149,7 +149,7 @@ header{ /* top shadow*/
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--dark);
-    display: inline;
+   /* display: inline;*/
     margin: 10px;
     float: left;
     background-color:#4b0303;
@@ -277,10 +277,12 @@ header{ /* top shadow*/
     transition: all 0.5s ease;
 }
 .project-content{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
-    align-items: top;
+    font-size: 1.3rem;
+    padding: 0.6rem 0;
+    opacity: 0.8;
+    color: black;
+    font-family: var(--h);
+    font-weight: bold;
 }
 /* about title h2 */
 .project-title{
@@ -373,15 +375,13 @@ footer{
         margin-left: auto ;
         margin-right: auto;
     }
-    .dalgona-content img{
-        width: 250px;
-        height: 350px;
+    .home-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem; 
     }
-    .dalgona-content{
-        display:flexbox;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
-        align-items: center;
+    .home-item{
+        margin: 0;
     }
 }
 
@@ -391,64 +391,24 @@ footer{
         align-items: center;
         justify-content: space-between;
     }
-    
-    .blog-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    .home-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    
-    .churro-content img{
-        width: 350px;
-        height: 350px;
-    }
-    .churro-content {
-        display:flexbox;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
-        align-items: center;
-    } 
 }
 
 @media screen and (min-width: 992px) {
-    .blog-content{
-        grid-template-columns: repeat(3, 1fr);
-
-    }
     .home-content{
         grid-template-columns: repeat(3, 1fr);
 
     }
-    
-    .churro-content img{
-        width: 350px;
-        height: 350px;
-        
-    }
-    .churro-content {
-        display:flexbox;
+    .project-content{
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
-        align-items: center;
+        column-gap: 3rem;
+        align-items: top;
     }
     
 }
 
 @media screen and (min-width: 1200px){
-    .churro-content img{
-        width: 350px;
-        height: 350px;
-        
-    }
-    .churro-content {
-        display:flexbox;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
-        align-items: center;
+    .home-content{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
