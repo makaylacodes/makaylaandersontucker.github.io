@@ -136,8 +136,8 @@ header{ /* top shadow*/
 /* start of work html*/
 
 .work{ /* work background*/
-    background: linear-gradient(rgba(134, 78, 78, 0.705), 
-    rgba(119, 15, 15, 0.753));
+    background: linear-gradient(rgba(151, 83, 83, 0.801), rgba(138, 2, 2, 0.63));
+
     padding: 4.5rem 0;
 }
 .work-text a{/* read more button*/
@@ -146,7 +146,7 @@ header{ /* top shadow*/
     text-decoration: none;
     color: var(--dark);
     display: inline-block;
-    background:#4b0303;
+    background-color:#4b0303;
     color: rgb(200, 200, 241);
     font-weight: bold;
     padding: 0.55rem 1.2rem;
@@ -251,166 +251,41 @@ header{ /* top shadow*/
 }
 /* end of home html*/
 
-
-/* kimchi */
-.kimchi {
-    background: #f0bebe;
+/* start of projects */
+.project{
+    background: linear-gradient(rgba(145, 91, 91, 0.836), 
+    rgba(87, 6, 6, 0.849));
     padding: 4.5rem 0;
 }
-.kimchi p{
-    color: black;
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    align-items: top;
 }
-
-.kimchi-text{
-    
-    margin: 2.2rem 0;
-    padding: 0 1rem;
-}
-
-.kimchi-title h2{
-    font-family:var(--Handlee);
+/* about title h2 */
+.project-title{
     color: black;
-    padding: 1rem 0;
-    font-size: 3rem;
-    font-weight: 500;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
     text-decoration: underline;
+    font-family: var(--Handlee);
+}
+/*project description */
+
+.project-content .project-text p{
+    font-size: 1.3rem;
+    padding: 0.6rem 0;
+    color: black;
+    font-family: var(--Patrick);
     font-weight: bold;
 }
+/* end of projects is about in other*/
 
-.kimchi-text p{
-    text-decoration: none;
-    display: inline-block;
-    text-transform: capitalize;
-    font-size: x-large;
-    font-weight:bold;
-    color: rgb(3, 3, 3);
-    font-family: var(--Handlee);
-}
-
-
-/* blog */
-
-.blog{
-    background: #f0bebe;
-    padding: 4.5rem 0;
-}
-.blog-content{
-    margin: 2rem 0;
-}
-.blog-item{
-    cursor: pointer;
-    margin: 1.5rem 0;
-}
-.blog-img{
-    position: relative;
-    overflow: hidden;
-
-}
-
-.blog-img::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-}
-.blog-img img{
-    transition: all 0.5 ease;
-}
-
-.blog-item:hover img{
-    transform: scale(1.2);
-
-}
-.blog-img span:last-of-type{
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    right: 10px;
-    color: #fff;
-    font-weight:700;
-    font-size: 1.1rem;
-
-}
-.blog-img img{
-    transition: all 0.5 ease;
-}
-
-.blog-item:hover img{
-    transform: scale(1.2);
-
-} 
-.blog-img span:first-of-type{
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    left: 10px;
-    background: #df5d5d;
-    color: #fff;
-    padding: 0.25rem 1rem;
-}
-
-.blog-img span:last-of-type{
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    right: 10px;
-    color: #fff;
-    font-weight:700;
-    font-size: 1.1rem;
-
-}
-
-
-.blog-title h2{
-    font-family: var(--Handlee);
-    padding: 1rem 0;
-    font-size: 1.65;
-    font-weight: 500;
-    font-weight: bold;
-}
-
-
-.blog-text h2{
-    font-family: var(--Handlee);
-    padding: 1rem 0;
-    font-size: 1.65;
-    font-weight: 500;
-}
-
-.blog-text p{
-    font-weight: 300;
-    font-size: 1.1rem;
-    opacity: 0.9;
-    padding-bottom: 1.2rem;
-    font-weight: bold;
-}
-
-.blog-text a{
-    font-family: var(--Handlee);
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: var(--dark);
-    display: inline-block;
-    background:#df5d5d;
-    color: #fff;
-    padding: 0.55rem 1.2rem;
-    transition: all 0.5s ease;
-
-}
-
-.blog-text a:hover{
-    background: var(--exDark);
-}
 
 /* about */
 
-.about {
-    background: #f0bebe;
-    padding: 4.5rem 0;
-}
 .title{
     color: black;
     font-weight: bold;
@@ -418,14 +293,6 @@ header{ /* top shadow*/
 }
 
 
-.about-content .about-text p{
-    font-size: 1.3rem;
-    padding: 0.6rem 0;
-    opacity: 0.8;
-    color: black;
-    font-family: var(--Handlee);
-    font-weight: bold;
-}
 /* footer */
 
 footer{
