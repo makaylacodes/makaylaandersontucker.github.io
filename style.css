@@ -5,7 +5,6 @@
 
 :root{
     --Roboto: 'Roboto Slab', serif;
-    --Handlee: 'Handlee', cursive;
     --Playfair: 'Playfair Display', serif;
     --dark: #3c393d;
     --exDark: #3a2929;
@@ -298,9 +297,49 @@ header{ /* top shadow*/
 .title{
     color: black;
     font-weight: bold;
-    font-family: var(--Handlee);
+    font-family: var(--Roboto);
 }
 /* end of about*/
+
+/* start of contact*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: black;
+    font-weight: bolder;
+  }
+  
+  input[type=submit] {
+    background-color: #050633b4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #584dcff5;
+  }
+  /* Add a background color and some padding around the form */
+  .container-c {
+    border-radius: 5px;
+    background-color: linear-gradient(rgba(236, 211, 211, 0.801), 
+    rgba(152, 224, 224, 0.63));
+    padding: 20px;
+    text-align: center;
+  }
+
+/* end of contact*/
 
 /* thank you */
 .thank-title h2{ /* this is the caption under pic*/
@@ -333,7 +372,7 @@ footer{
     font-size: large;
     text-align: center; 
     padding: 2rem 0;
-    font-family: var(--Handlee);
+    font-family: var(--Roboto);
 }
 .social-links{
     display: flex;
@@ -366,7 +405,7 @@ footer{
     margin-top: 1rem;
     display: block;
     font-size: 8rem;
-    font-family: var(--Handlee);
+    font-family: var(--Roboto);
     letter-spacing: 2px;
 }
 
