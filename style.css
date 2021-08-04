@@ -46,8 +46,19 @@ img{
     color: rgb(0, 0, 0);
     text-decoration: underline;
     padding: 0.8rem 0.8rem;
-    letter-spacing: 3px;
-    
+    letter-spacing: 3px; 
+}
+
+.title-1 h2{ /* Top projects on home and work*/
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    font-weight: bolder;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    padding: 0 1rem;
+    letter-spacing: 3px; 
 }
 
 /* header */
@@ -114,7 +125,8 @@ header{ /* top shadow*/
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: linear-gradient(rgba(236, 211, 211, 0.801), rgba(152, 224, 224, 0.63));;
+    background-color: linear-gradient(rgba(236, 211, 211, 0.801), 
+    rgba(152, 224, 224, 0.63));
 
 }
 
@@ -288,7 +300,30 @@ header{ /* top shadow*/
     font-weight: bold;
     font-family: var(--Handlee);
 }
+/* end of about*/
 
+/* thank you */
+.thank-title h2{ /* this is the caption under pic*/
+    font-family: var(--Roboto);
+    padding: 1rem 0;
+    color: rgb(0, 0, 0);
+    font-size: 1.65;
+    font-weight: 500;
+    text-align: center;
+    font-weight: bold;
+}
+.thank{ /* top shadow*/
+    min-height: 100vh;
+    background: linear-gradient(rgba(236, 211, 211, 0.637), 
+    rgba(152, 224, 224, 0.301)), url(images/hi.gif)
+    center/cover no-repeat;
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+
+
+}
+/* end of thank you*/
 
 /* footer */
 
