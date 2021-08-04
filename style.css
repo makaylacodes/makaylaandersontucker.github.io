@@ -33,6 +33,7 @@ img{
     padding: 0 1.2rem;
     color: rgb(255, 255, 255);
     font-family: var(--Roboto);
+    text-align: center;
 }
 
 .title h2{ /* Top projects on home and work*/
@@ -155,6 +156,7 @@ header{ /* top shadow*/
     background: linear-gradient(rgba(236, 211, 211, 0.801), 
     rgba(152, 224, 224, 0.63));
     padding: 4.5rem 0;
+    text-align: center;
 }
 
 .work-title input:hover{ /* live demo and repo button  in work*/
@@ -190,6 +192,7 @@ header{ /* top shadow*/
     background: linear-gradient(rgba(236, 211, 211, 0.801), 
     rgba(152, 224, 224, 0.63));
     padding: 4.5rem 0;
+    text-align: center;
 }
 .home-content{ /* spacing between Project titles and gifs*/
     margin: .5rem 0;
