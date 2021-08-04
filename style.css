@@ -192,7 +192,7 @@ header{ /* top shadow*/
     padding: 4.5rem 0;
 }
 .home-content{ /* spacing between Project titles and gifs*/
-    margin: 2rem 0;
+    margin: .5rem 0;
 }
 .home-item{
     cursor: pointer;
@@ -202,11 +202,6 @@ header{ /* top shadow*/
     position: relative;
     overflow: hidden;
 }
-.home-img-1{
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    width: 300px;}
 
 .home-img::after{
     position: absolute;
@@ -430,8 +425,11 @@ footer{
         grid-template-columns: repeat(2,1fr);
         gap: 2rem; 
     }
-    .home-item{
-        margin: 0;
+    .home-img{
+        position: relative;
+        overflow: hidden;
+        width:fit-content;
+    height: fit-content;
     }
 }
 
@@ -445,6 +443,9 @@ footer{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 2rem; 
+    }
+    .home-item{
+        margin: 0;
     }
 }
 
