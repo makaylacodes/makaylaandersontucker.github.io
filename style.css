@@ -1,9 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
 
 :root{
-   
+    --Roboto: 'Roboto Slab', serif;
     --Handlee: 'Handlee', cursive;
+    --Playfair: 'Playfair Display', serif;
     --dark: #3c393d;
     --exDark: #3a2929;
 
@@ -12,12 +15,12 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: var(--Handlee);
+    font-family: var(--Roboto);
 }
 
 body{
     line-height: 1.4;
-    color: var(--dark);
+    color: black;
 }
 
 img{
@@ -30,19 +33,19 @@ img{
     margin: 0 auto;
     padding: 0 1.2rem;
     color: rgb(255, 255, 255);
-    font-family: var(--Handlee);
+    font-family: var(--Roboto);
 }
 
 .title h2{ /* Top projects on home and work*/
     text-transform: uppercase;
-    font-family: var(--Handlee);
+    font-family: var(--Roboto);
+    font-weight: bolder;
     letter-spacing: 1px;
     font-size: 2rem;
     text-align: center;
     color: rgb(0, 0, 0);
     text-decoration: underline;
     padding: 0.8rem 0.8rem;
-    font-weight:bolder;
     letter-spacing: 3px;
     
 }
@@ -50,8 +53,8 @@ img{
 /* header */
 header{ /* top shadow*/
     min-height: 100vh;
-    background: linear-gradient(rgba(99, 42, 42, 0.4), 
-    rgba(99, 29, 29, 0.753)), url(images/hi.gif)
+    background: linear-gradient(rgba(236, 211, 211, 0.637), 
+    rgba(152, 224, 224, 0.301)), url(images/hi.gif)
     center/cover no-repeat;
     display: flex;
     font-weight: bold;
@@ -61,18 +64,18 @@ header{ /* top shadow*/
 
 /* start of nav bar */
 .navbar-h{ /* nav bar containing makayla and home for index.html*/
-    background: rgba(143, 107, 107, 0.6);
+    background: rgba(252, 227, 227, 0.6);
     padding: 1.2rem;
    
 }
 
 .navbar-brand-h{ /* Makaylas Portfolio*/
     color: rgb(17, 13, 13);
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: block;
     text-align: center;
     text-decoration: none;
-    font-family: var(--Handlee);
+    font-family: var(--Playfair);
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -85,14 +88,14 @@ header{ /* top shadow*/
 
 .navbar-nav-h a{/* Home-Work-Resume*/
     text-transform: uppercase;
-    font-family:var(--Handlee);
+    font-family: var(--Roboto);
     letter-spacing: 1px;
     font-size: larger;
     color: rgb(0, 0, 0);
     text-decoration: none;
     display: inline-block;
     padding: 0.8rem 0.8rem;
-    font-weight:bolder;
+    
     letter-spacing: 3px;
     transition: opacity 0.5s ease;
 }
@@ -111,14 +114,16 @@ header{ /* top shadow*/
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: linear-gradient(rgba(236, 211, 211, 0.801), rgba(152, 224, 224, 0.63));;
 
 }
 
 .banner-title{ /*Makayla Anderson-Tucker*/
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1.2;
     color: black;
-    font-family:var(--Handlee);
+    font-family:var(--Playfair);
+    font-weight: bolder;
 
 }
 
@@ -126,7 +131,7 @@ header{ /* top shadow*/
     padding: 1rem 0 2rem 0;
     font-size: 1.9rem;
     text-transform: capitalize;
-    font-family: var(--Handlee);
+    font-family: var(--Playfair);
     color: black;
     font-weight: bolder;
     word-spacing: 2px;
@@ -136,23 +141,32 @@ header{ /* top shadow*/
 
 /* start of work html*/
 .work{ /* work background*/
-    background: linear-gradient(rgba(151, 83, 83, 0.801), rgba(138, 2, 2, 0.63));
-
+    background: linear-gradient(rgba(236, 211, 211, 0.801), 
+    rgba(152, 224, 224, 0.63));
     padding: 4.5rem 0;
 }
 
-.work-title input:hover{ /*read more button  in work*/
+.work-title input:hover{ /* live demo and repo button  in work*/
     background: var(--exDark);
 }
-.work-title input {/* read more button in work*/
-    font-family: var(--Handlee);
+.work-title h2{ /* this is the caption under pic*/
+    font-family: var(--Roboto);
+    padding: 1rem 0;
+    color: rgb(0, 0, 0);
+    font-size: 1.65;
+    font-weight: 500;
+    font-weight: bold;
+    text-align: center;
+}
+.work-title input {/* live demo and repo button in work*/
+    font-family: var(--Roboto);
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--dark);
    /* display: inline;*/
     margin: 10px;
     float: left;
-    background-color:#4b0303;
+    background-color:#173446;
     color: rgb(200, 200, 241);
     font-weight: bold;
     padding: 0.55rem 1.2rem;
@@ -162,8 +176,8 @@ header{ /* top shadow*/
 
 /* start of home html*/
 .home{ 
-    background: linear-gradient(rgba(165, 62, 62, 0.623), 
-    rgba(49, 12, 12, 0.808));
+    background: linear-gradient(rgba(236, 211, 211, 0.801), 
+    rgba(152, 224, 224, 0.63));
     padding: 4.5rem 0;
 }
 .home-content{ /* spacing between Project titles and gifs*/
@@ -176,8 +190,12 @@ header{ /* top shadow*/
 .home-img{
     position: relative;
     overflow: hidden;
-    
 }
+.home-img-1{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;}
 
 .home-img::after{
     position: absolute;
@@ -226,83 +244,41 @@ header{ /* top shadow*/
     font-size: 1.3rem;
 
 }
+.home-img-1 span:last-of-type{ /*pic caption*/
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(255, 217, 217);
+    
+    font-size: 1.3rem;
+
+}
 
 .home-title h2{ /* this is the caption under pic*/
-    font-family: var(--Handlee);
+    font-family: var(--Roboto);
     padding: 1rem 0;
     color: rgb(0, 0, 0);
     font-size: 1.65;
     font-weight: 500;
     font-weight: bold;
 }
-
 .home-title input:hover{/* read more button for index.html*/
     background: var(--exDark);
 }
 .home-title input{/* read more button for index.html*/
-    font-family: var(--Handlee);
+    font-family: var(--Roboto);
     font-size: 1.4rem;
     text-decoration: none;
     color: var(--dark);
     display: inline-block;
-    background:#8b3535;
+    background-color:#173446;
     color: #fff;
     font-weight: bold;
     padding: 0.55rem 1.2rem;
     transition: all 0.5s ease;
 }
 /* end of home html*/
-
-/* start of projects */
-.project{
-    background: linear-gradient(rgba(145, 91, 91, 0.836), 
-    rgba(87, 6, 6, 0.849));
-    padding: 4.5rem 0;
-}
-.project-title input:hover{ /*read more button  in work*/
-    background: var(--exDark);
-}
-.project-title input {/* read more button in work*/
-    font-family: var(--Handlee);
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: var(--dark);
-    display: inline;
-    margin: 10px;
-    float: left;
-    background-color:#7c2424;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 0.55rem 1.2rem;
-    transition: all 0.5s ease;
-}
-.project-content{
-    font-size: 1.3rem;
-    padding: 0.6rem 0;
-    opacity: 0.8;
-    color: black;
-    font-family: var(--h);
-    font-weight: bold;
-}
-/* about title h2 */
-.project-title{
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: underline;
-    font-family: var(--Handlee);
-}
-/*project description */
-
-.project-content .project-text p{
-    font-size: 1.3rem;
-    padding: 0.6rem 0;
-    color: black;
-    font-family: var(--Patrick);
-    font-weight: bold;
-}
-/* end of projects is about in other*/
 
 
 /* about */
@@ -317,7 +293,7 @@ header{ /* top shadow*/
 /* footer */
 
 footer{
-    background: var(--exDark);
+    background: rgba(4, 34, 34, 0.788);
     color: #fff;
     font-size: large;
     text-align: center; 
